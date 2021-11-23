@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>操作系统</title>
+      <link href="/posts/d04bd5bc/"/>
+      <url>/posts/d04bd5bc/</url>
+      
+        <content type="html"><![CDATA[<h1 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1><p>仅供考研复习用，辅助书王道考研</p><hr><br><h1 id="计算机系统概述"><a href="#计算机系统概述" class="headerlink" title="计算机系统概述"></a>计算机系统概述</h1><hr><br><h1 id="进程管理"><a href="#进程管理" class="headerlink" title="进程管理"></a>进程管理</h1><hr><br><h1 id="内存管理"><a href="#内存管理" class="headerlink" title="内存管理"></a>内存管理</h1><h2 id="内存管理概念"><a href="#内存管理概念" class="headerlink" title="内存管理概念"></a>内存管理概念</h2><h2 id="虚拟内存管理"><a href="#虚拟内存管理" class="headerlink" title="虚拟内存管理"></a>虚拟内存管理</h2><ul><li>为什么要引入虚拟内存？</li><li>虚拟内存空间的大小由什么因素来决定</li><li>虚拟内存是怎么解决问题的？会带来什么问题？</li></ul><h3 id="虚拟内存的基本概念"><a href="#虚拟内存的基本概念" class="headerlink" title="虚拟内存的基本概念"></a>虚拟内存的基本概念</h3><h4 id="传统存储管理方式的特征"><a href="#传统存储管理方式的特征" class="headerlink" title="传统存储管理方式的特征"></a>传统存储管理方式的特征</h4><ul><li>一次性<ul><li>作业必须一次性全部装入内存中才可以运行<ul><li>该作业太大，内存放不下，无法运行</li><li>大量作业同时要求运行时，内存不足以容纳所有作业，只能运行少数作业</li></ul></li></ul></li><li>驻留性<ul><li>直至作业运行结束前，该作业会一直留在内存中，即使作业中的某些部分不会被使用也会呆在内存中</li></ul></li></ul><blockquote><p>总结：</p></blockquote><p>传统存储管理方式太浪费内存资源了。</p><h4 id="局部性原理"><a href="#局部性原理" class="headerlink" title="局部性原理"></a>局部性原理</h4><p>快表、页高速缓存、虚拟内存技术在广义上讲。都属于高速缓存技术，而高速缓存技术恰恰依赖的就是 <strong>局部性原理</strong> 。</p><p>局部性原理所体现的两个方面：</p><ul><li>时间局部性<ul><li>程序中的某条指令或数据一旦执行或被访问，不久后该指令或数据可能会再次执行或被访问</li><li>出现的原因是程序中存在大量的循环操作</li></ul></li><li>空间局部性<ul><li>一旦程序访问了某个存储单元，不久后其附近的存储单元也将被访问</li><li>出现的原因是指令通常顺序存放或顺序执行，数据是簇聚存储</li></ul></li></ul><h4 id="虚拟存储器的定义和特征"><a href="#虚拟存储器的定义和特征" class="headerlink" title="虚拟存储器的定义和特征"></a>虚拟存储器的定义和特征</h4><p>基于局部性原理，程序装入时，将程序的一部分(当前要立即用到的)装入内存，程序就可执行。当所访问的信息不在内存是，  <strong>操作系统</strong> 将所需部分调入内存，使得程序能继续执行。另外，操作系统还将内存中暂时不用的内容换到外存中。这就是虚拟存储器</p><p>个人理解：虽然它叫虚拟存储器，但它并不是一个具体的物体，是抽象的技术实现的，所以才叫虚拟。只是给人感觉上内存变得大了而已，但实际上你还是有多少内存就有多少内存。</p><p>虚拟存储器的大小由 <strong>计算机的地址结构</strong> 决定，并不是内存和外存简单的相加。</p><p> <strong>虚拟存储器的主要特征</strong> </p><ul><li>多次性<ul><li>作业无需一次性全部装入内存即可运行</li></ul></li><li>对换性<ul><li>作业无需一直驻留在内存中即可运行</li></ul></li><li>虚拟性<ul><li>从逻辑上扩充的内存</li></ul></li></ul><h4 id="虚拟内存技术的实现"><a href="#虚拟内存技术的实现" class="headerlink" title="虚拟内存技术的实现"></a>虚拟内存技术的实现</h4><p>虚拟内存的建立在离散分配的内存管理方式的基础上实现的。</p><p><strong>虚拟内存的三种方式</strong></p><ul><li>请求分页存储管理</li><li>请求分段存储管理</li><li>请求段页式存储管理</li></ul><p>不管哪种实现，都要有一定的硬件支持</p><ul><li>有一定的内存和外存</li><li>页表机制，作为主要的数据结构</li><li>中断机构，当要访问的部分未在内存中，则产生中断</li><li>地址变换机构 逻辑地址转换为物理地址</li></ul><h3 id="请求分页管理方式"><a href="#请求分页管理方式" class="headerlink" title="请求分页管理方式"></a>请求分页管理方式</h3><p>建立在基本分页系统基础上，添加了请求调页和页面置换功能。是 <strong>最常用</strong> 的实现虚拟存储器的方式。</p><h4 id="页表机制"><a href="#页表机制" class="headerlink" title="页表机制"></a>页表机制</h4><hr><br><h1 id="文件管理"><a href="#文件管理" class="headerlink" title="文件管理"></a>文件管理</h1><hr><br><h1 id="输入输出管理"><a href="#输入输出管理" class="headerlink" title="输入输出管理"></a>输入输出管理</h1><hr><br>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Jsp期中考试</title>
       <link href="/posts/ec7b206f/"/>
       <url>/posts/ec7b206f/</url>
@@ -117,9 +130,9 @@
             
             <tag> 后端 </tag>
             
-            <tag> 安全 </tag>
-            
             <tag> Spring </tag>
+            
+            <tag> 安全 </tag>
             
         </tags>
       
