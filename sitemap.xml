@@ -86,14 +86,14 @@
   </url>
   
   <url>
-    <loc>https://ohnewbie.github.io/posts/bbba29c6/</loc>
+    <loc>https://ohnewbie.github.io/posts/63e8d70/</loc>
     
     <lastmod>2021-10-14</lastmod>
     
   </url>
   
   <url>
-    <loc>https://ohnewbie.github.io/posts/63e8d70/</loc>
+    <loc>https://ohnewbie.github.io/posts/bbba29c6/</loc>
     
     <lastmod>2021-10-14</lastmod>
     
@@ -151,14 +151,14 @@
   </url>
   
   <url>
-    <loc>https://ohnewbie.github.io/tags/%E6%8A%80%E6%9C%AF/</loc>
+    <loc>https://ohnewbie.github.io/tags/%E5%B0%8F%E7%9F%A5%E8%AF%86/</loc>
     <lastmod>2021-11-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://ohnewbie.github.io/tags/%E5%B0%8F%E7%9F%A5%E8%AF%86/</loc>
+    <loc>https://ohnewbie.github.io/tags/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2021-11-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -209,13 +209,6 @@
   </url>
   
   <url>
-    <loc>https://ohnewbie.github.io/categories/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2021-11-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://ohnewbie.github.io/categories/%E4%BA%BF%E7%82%B9%E5%B0%8F%E7%9F%A5%E8%AF%86/</loc>
     <lastmod>2021-11-30</lastmod>
     <changefreq>daily</changefreq>
@@ -224,6 +217,13 @@
   
   <url>
     <loc>https://ohnewbie.github.io/categories/%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/</loc>
+    <lastmod>2021-11-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ohnewbie.github.io/categories/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2021-11-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
